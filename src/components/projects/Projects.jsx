@@ -8,7 +8,7 @@ function Projects() {
   const projectData = [
     {
       name: 'Ur Wallpaper',
-      tech: 'Using React JS, Node JS (Website)',
+      tech: ['React JS', 'Node JS', 'Cloudinary', 'Express', 'GSAP'],
       description:
         'Created a dynamic website that showcases live wallpapers captured by users, offering a personalized and visually engaging experience.',
       repo: 'https://github.com/THRINATH3/urwallpaper_react',
@@ -17,7 +17,7 @@ function Projects() {
     },
     {
       name: 'Occasional-Stylist',
-      tech: 'Using React JS, Node JS (Website)',
+      tech: ['React JS', 'Node JS', 'Express'],
       description:
         'Designed a website that provides personalized outfit recommendations based on body type, helping users choose suitable attire for different occasions.',
       repo: 'https://github.com/THRINATH3/O-Stylist',
@@ -26,7 +26,7 @@ function Projects() {
     },
     {
       name: 'Hiremate',
-      tech: 'Using React JS, Node JS (Website)',
+      tech: ['React JS', 'Node JS', 'Express', 'Cloudinary'],
       description:
         'Developed a dynamic freelancing platform that connects skilled freelancers with hiring professionals. Features like secure messaging, project tracking, and seamless collaboration ensure a smooth and professional experience.',
       repo: 'https://github.com/THRINATH3/HireMate',
@@ -50,7 +50,13 @@ function Projects() {
                 />
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title fw-bold">{project.name}</h5>
-                  <p className="card-subtitle fw-semibold mb-2">{project.tech}</p>
+                  <div className="mb-2">
+                    {project.tech.map((tech, i) => (
+                      <span key={i} className="badge-gradient me-2 mb-2">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                   <hr />
                   <p className="card-text flex-grow-1">{project.description}</p>
                   <div className="mt-3 text-center">
@@ -59,7 +65,7 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-outline-dark btn-sm me-2"
-                      style={{width:'40%'}}
+                      style={{ width: '40%',fontSize:'120%' }}
                     >
                       Repo
                     </a>
@@ -68,7 +74,7 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary btn-sm"
-                      style={{width:'40%'}}
+                      style={{ width: '40%',fontSize:'120%' }}
                     >
                       Live Demo
                     </a>
@@ -78,7 +84,7 @@ function Projects() {
             </div>
           ))}
         </div>
-        <hr className='mt-5' />
+        <hr className="mt-5" />
       </div>
     </section>
   );

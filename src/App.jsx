@@ -5,7 +5,7 @@ import Mypage from './components/mypage/Mypage';
 
 function App() {
   return (
-    <div className='font'>
+    <div className='font' >
       <Header />
       <div style={{ minHeight: '100vh', minWidth: '100%' }}>
         <Mypage />

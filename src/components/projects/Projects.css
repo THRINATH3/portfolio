@@ -1,0 +1,11 @@
+/* Projects.css */
+
+.badge-gradient {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 0.5em 0.75em;
+    font-size: 0.8rem;
+    border-radius: 12px;
+    display: inline-block;
+  }
+  

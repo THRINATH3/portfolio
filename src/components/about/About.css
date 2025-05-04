@@ -9,3 +9,32 @@
   color: #555;
 }
 
+.badge {
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Ensure smooth transition for both */
+}
+
+.badge:hover {
+  transform: scale(1.1); /* Scale the badge on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.badge.bg-primary:hover {
+  background-color: #004080 !important; /* darker blue */
+}
+
+.badge.bg-success:hover {
+  background-color: #006400 !important; /* darker green */
+}
+
+.badge.bg-warning:hover {
+  background-color: #cc9a00 !important; /* darker yellow */
+}
+
+.badge.bg-danger:hover {
+  background-color: #a30000 !important; /* darker red */
+}
+
+.badge.bg-secondary:hover {
+  background-color: #444444 !important; /* darker gray */
+}

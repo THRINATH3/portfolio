@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-4 py-3">
-      <a className="navbar-brand text-info fw-bold fs-3 hdani" href="#">Pothineni Thrinath</a>
+      <a className="navbar-brand text-white fw-bold fs-3 hdani" href="#">Pothineni Thrinath</a>
       <button
         className="navbar-toggler"
         type="button"

@@ -5,7 +5,8 @@ import skills from '../gallery/skills.png';
 
 function About() {
   return (
-    <section id="about" className="about-section py-5">
+    <div id='about' >
+    <section  className="about-section py-5">
       <div className="container">
         <div className="row align-items-center">
           {/* About Text Column */}
@@ -61,7 +62,7 @@ function About() {
                       <span className="badge bg-primary w-50 py-2 fs-5">JavaScript</span>
                     </div>
                     <div className="col-6 mb-2">
-                      <span className="badge bg-primary w-50 py-2 fs-5">Python</span>
+                      <span className="badge bg-primary w-80 py-2 fs-5">Java,Python - Basic</span>
                     </div>
                   </div>
                 </div>
@@ -131,6 +132,7 @@ function About() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 
