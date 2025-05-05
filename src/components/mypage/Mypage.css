@@ -16,29 +16,35 @@
 
 .text-overlay {
   position: absolute;
-  top: 35%; /* Removed duplicate top property */
+  top: 35%; 
   left: 0;
   transform: translateY(-50%);
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
   display: inline-block;
-  z-index: 10; /* Ensure text is above the image */
+  z-index: 10; 
 }
 
 .text-overlay2 {
   position: absolute;
-  top: 35%; /* Removed duplicate top property */
+  top: 35%; 
   left: 0;
   transform: translateY(-80%);
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
   display: inline-block;
-  z-index: 10; /* Ensure text is above the image */
+  z-index: 10; 
 }
 
 .letter {
   display: inline-block;
   opacity: 0;
+}
+
+@media screen and (max-width: 500px)  {
+    .text-overlay2{
+      transform: translateY(-120%) !important;
+    }
 }

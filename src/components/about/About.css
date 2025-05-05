@@ -10,31 +10,41 @@
 }
 
 .badge {
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Ensure smooth transition for both */
+  transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 
 .badge:hover {
-  transform: scale(1.1); /* Scale the badge on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
-  cursor: pointer; /* Change cursor to indicate interactivity */
+  transform: scale(1.1); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
 }
 
 .badge.bg-primary:hover {
-  background-color: #004080 !important; /* darker blue */
+  background-color: #004080 !important; 
 }
 
 .badge.bg-success:hover {
-  background-color: #006400 !important; /* darker green */
+  background-color: #006400 !important; 
 }
 
 .badge.bg-warning:hover {
-  background-color: #cc9a00 !important; /* darker yellow */
+  background-color: #cc9a00 !important; 
 }
 
 .badge.bg-danger:hover {
-  background-color: #a30000 !important; /* darker red */
+  background-color: #a30000 !important; 
 }
 
 .badge.bg-secondary:hover {
-  background-color: #444444 !important; /* darker gray */
+  background-color: #444444 !important; 
+}
+
+@media screen and (max-width:768px){
+  .badge {
+    width : 100% !important;
+  }  
+  .rev{
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

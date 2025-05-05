@@ -10,6 +10,7 @@ function About() {
       <div className="container">
         <div className="row align-items-center">
           {/* About Text Column */}
+          <div className="rev">
           <div className="col-md-6 mb-4 mb-md-0">
             <h2 className="section-title mb-3">About Me</h2>
             <p className="about-text lead">
@@ -29,6 +30,7 @@ function About() {
               style={{width:'100%',borderRadius:'50%'}}
             />
           </div>
+      </div>
 
           <hr className='mt-5'/>
 
@@ -62,7 +64,10 @@ function About() {
                       <span className="badge bg-primary w-50 py-2 fs-5">JavaScript</span>
                     </div>
                     <div className="col-6 mb-2">
-                      <span className="badge bg-primary w-80 py-2 fs-5">Java,Python - Basic</span>
+                      <span className="badge bg-primary w-80 py-2 fs-5">Java - Basic</span>
+                    </div>
+                    <div className="col-6 mb-2">
+                      <span className="badge bg-primary w-80 py-2 fs-5">Python - Basic</span>
                     </div>
                   </div>
                 </div>
