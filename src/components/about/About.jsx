@@ -10,7 +10,7 @@ function About() {
       <div className="container">
         <div className="row align-items-center">
           {/* About Text Column */}
-          <div className="rev">
+          <div className="rev d-flex">
           <div className="col-md-6 mb-4 mb-md-0">
             <h2 className="section-title mb-3">About Me</h2>
             <p className="about-text lead">
@@ -22,7 +22,7 @@ function About() {
           </div>
 
           {/* Image Column */}
-          <div className="col-md-6 text-center mb-4 mb-md-0">
+          <div className="col-md-6 text-center mb-4 mb-md-0 m-3">
             <img
               src={ab}
               alt="Portrait of Full Stack Developer"
